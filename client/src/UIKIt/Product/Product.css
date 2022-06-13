@@ -1,0 +1,139 @@
+.productPage {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: green; */
+}
+.productPage__content {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(255, 0, 0); */
+}
+.productPage__content__image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(204, 0, 255); */
+}
+.ratingwrapper {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-top: 1px solid rgb(218, 218, 218);
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+.pricewrapper {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+.productPage__content__info {
+  width: 50%;
+  height: 75%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-family: SFProB;
+}
+.productPage__content__image img {
+  width: 100%;
+}
+
+.productPage__content__info header {
+  font-size: 27px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+.ratingComp,
+.productPage__content__info price {
+  font-size: 16px;
+  font-family: SFProR;
+  color: rgb(119, 119, 119);
+  margin-left: 15px;
+}
+
+.productPage__content__info description {
+  font-size: 16px;
+  line-height: 34px;
+  font-family: SFProR;
+  color: rgb(119, 119, 119);
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.productPage__content__add {
+  width: 70%;
+  height: 81%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.addBox {
+  width: 16rem;
+  font-family: SFProR;
+  border: 1px solid rgb(218, 218, 218);
+}
+.addPrice {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.addpriceNum {
+  margin-left: 6rem;
+}
+.addStatusState {
+  margin-left: 5.5rem;
+}
+.addStatus {
+  height: 3rem;
+  border-top: 1px solid rgb(218, 218, 218);
+  border-bottom: 1px solid rgb(218, 218, 218);
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.addBtn {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addBtn button {
+  font-family: SFProR;
+  font-size: 15px;
+  width: 85%;
+  height: 70%;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  border: none;
+}
+.addBtn button:hover {
+  font-size: 15px;
+  width: 85%;
+  height: 70%;
+  background-color: #f7ba01;
+  color: black;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.addBtn button:active:hover {
+  font-size: 15px;
+  width: 85%;
+  height: 70%;
+  background-color: #ce9b00;
+  color: black;
+}

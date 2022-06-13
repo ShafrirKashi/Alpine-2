@@ -1,0 +1,39 @@
+.product-card {
+  width: auto;
+  height: 40rem;
+  font-family: SFProT;
+}
+.product-card:hover {
+  cursor: pointer;
+}
+.swiper {
+  width: 98%;
+}
+.product-details {
+  margin-bottom: 3rem;
+}
+.product-details p {
+  height: 0.7rem;
+  color: rgb(95, 95, 95);
+  font-size: 17px;
+}
+.product-name {
+  font-family: SFProR;
+  margin-top: 20px;
+  color: black !important;
+}
+.latest {
+  position: relative;
+  left: 20px;
+  font-family: SFProR;
+  font-size: 27px;
+  display: flex;
+  align-items: flex-end;
+  height: 6rem;
+}
+.apexlogo {
+  position: relative;
+  left: 7px;
+  width: 58px;
+  bottom: 3px;
+}

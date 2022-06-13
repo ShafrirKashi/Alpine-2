@@ -1,0 +1,157 @@
+.foot {
+  height: 25rem;
+  background-color: rgb(27, 27, 27);
+  margin-top: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(133, 111, 16);
+}
+.left {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.copyright {
+  color: rgb(179, 179, 179);
+  font-family: ErasMed;
+  font-size: 15px;
+}
+.middle {
+  position: relative;
+  padding-top: 20px;
+  height: 95%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.right {
+  height: 100%;
+  width: 25%;
+  font-family: ErasMed;
+}
+.topLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  color: white;
+}
+.topLinks2 {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  color: white;
+}
+.sendIt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.inptFoot {
+  width: 14rem;
+  height: 2rem;
+  background-color: rgba(27, 27, 27, 0);
+  border: 2px solid rgba(255, 255, 255, 0.76);
+  padding-left: 10px;
+  color: white;
+  font-size: 15px;
+  font-family: SFProR;
+}
+.btnFoot {
+  width: 10rem;
+  height: 2.4rem;
+  margin-left: 1rem;
+  background-color: white;
+  border: 1px solid rgb(27, 27, 27);
+  font-size: 15px;
+  font-family: SFProR;
+  cursor: pointer;
+}
+
+.footerlogobox {
+  height: 25rem;
+  width: 22rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footerlogo {
+  height: auto;
+  width: 60%;
+}
+.address {
+  color: rgb(197, 197, 197);
+}
+.about {
+  color: rgb(141, 141, 141);
+  font-size: 15px;
+  font-family: ErasMed;
+  line-height: 24px;
+}
+
+.footersocial {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15rem;
+  height: 4rem;
+}
+.facebook {
+  background-image: url('../../Assets/img/face.png');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.google {
+  background-image: url('../../Assets/img/google.png');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.insta {
+  background-image: url('../../Assets/img/insta.png');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.twitter {
+  background-image: url('../../Assets/img/twitter.png');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.topLinks,
+.topLinks2 li {
+  color: rgb(197, 197, 197);
+  font-family: SFProT;
+  cursor: pointer;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.topLinks li:hover {
+  color: #fabc02;
+}
+.topLinks2 li:hover {
+  color: #fabc02;
+}

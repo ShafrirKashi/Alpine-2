@@ -1,0 +1,26 @@
+.Button {
+  background-color: #fabc02;
+  border: none;
+  font-family: SFProR;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: fit-content;
+  height: 2.3rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0rem 0rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 10.66vh;
+  border: 1px solid rgb(148, 148, 148, 0.5);
+  white-space: nowrap;
+  transition: 0.2s;
+}
+.Button:hover {
+  background-color: #ffd760;
+  opacity: 0.82;
+  transition: 0.2s;
+}

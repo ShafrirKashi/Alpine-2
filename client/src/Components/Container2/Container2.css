@@ -1,0 +1,36 @@
+.secondcontainer {
+  height: 85vh;
+  width: 100%;
+  background-image: url('../../Assets/img/2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 1rem;
+  position: relative;
+  transition: none;
+  display: grid;
+  grid-template-columns: 53% auto;
+  grid-template-rows: 19% 18% 19% 40%;
+  background-attachment: fixed;
+}
+
+.h1_2 {
+  font-family: ErasBold;
+  font-size: 4rem;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  color: white;
+}
+.h2_2 {
+  font-family: ErasBold;
+  font-size: 1.6rem;
+  grid-row: 3/4;
+  grid-column: 2/3;
+  color: white;
+  width: 45rem;
+  text-size-adjust: none;
+}
+
+.button2 {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}

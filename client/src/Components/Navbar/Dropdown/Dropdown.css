@@ -1,0 +1,25 @@
+.dropdown {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 28rem;
+  min-width: 38rem;
+  background-color: #fff;
+}
+.links {
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.droplink {
+  color: black;
+}
+.imgdrop {
+  width: 50%;
+  height: 100%;
+  background-size: 185vw;
+}

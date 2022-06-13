@@ -1,0 +1,273 @@
+.nav {
+  position: -webkit-sticky;
+  top: 0;
+  position: sticky;
+  min-width: 100%;
+  z-index: 1000;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: rgb(29, 29, 29);
+  margin: 0;
+  padding: 0;
+  border-bottom: 0.106vh solid rgb(68, 68, 68);
+  height: 3.5rem;
+}
+.texttop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 2.2rem;
+  border-bottom: 0.106vh solid rgb(99, 99, 99);
+  font-size: 1.05rem;
+  font-family: SFProT;
+  cursor: pointer;
+  letter-spacing: 0.87px;
+}
+
+.texttop:hover {
+  color: #fabc02;
+  animation-name: texttop;
+  animation-duration: 0.4s;
+}
+
+.accessbar {
+  /* background-color:rgb(228, 0, 0); */
+  width: 8rem;
+  height: 2.32rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  right: 1rem;
+}
+.imglogin {
+  height: 1.7rem;
+  width: auto;
+  cursor: pointer;
+}
+.cartbox {
+  position: relative;
+  height: 100%;
+  width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0rem;
+  cursor: pointer;
+}
+
+.imgcart {
+  width: 3.4rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 0.35rem;
+}
+.imgnum {
+  position: absolute;
+  top: 0vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fabc02;
+  font-family: SFProT;
+  font-size: 1rem;
+  /* background-color: pink; */
+}
+
+.searchboxwrapper {
+  min-width: 15vw;
+  position: absolute;
+  right: 9.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.react-search-field {
+  border-radius: 100vh;
+  background-color: white;
+  width: 100%;
+  height: 4.4vh !important;
+}
+.react-search-field-input {
+  display: flex;
+  width: 100%;
+  height: auto !important;
+  border-top-left-radius: 11vh;
+  border-bottom-left-radius: 11vh;
+  background-color: rgb(255, 255, 255);
+  border-width: 0 !important;
+  position: relative;
+}
+.react-search-field-button {
+  border-radius: 100vh;
+  width: 2rem !important;
+  border-top-left-radius: 11vh;
+  border-bottom-left-radius: 11vh;
+  height: auto !important;
+  background-color: white !important;
+  border-width: 0 !important;
+}
+
+.logo_container {
+  width: 9.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1.5rem;
+  cursor: pointer;
+}
+.logonav {
+  background-image: url('../../Assets/img/1.png');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 3rem;
+  width: 10.5rem;
+  box-sizing: border-box;
+}
+.nav__items {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  color: white;
+  margin: 0;
+  padding: 0;
+  margin-right: 1rem;
+  margin-left: 1.5rem;
+  white-space: nowrap;
+  font-family: SFProR;
+}
+.nav__items > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  height: 100%;
+  padding: 0rem 2rem 0rem 2rem;
+  font-size: 100%;
+  cursor: pointer;
+}
+
+.nav__items > li:hover {
+  text-decoration: underline;
+  text-decoration-color: #fabc02;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+  color: #fabc02;
+}
+.topbarlinks {
+  display: flex;
+  height: 2.5rem;
+  width: 22rem;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  right: 5rem !important;
+  list-style-type: none;
+}
+
+.wishlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgflag {
+  position: relative;
+  top: 0.2rem;
+  width: 1.5rem;
+  height: 1rem;
+  margin-right: 0.6rem;
+}
+.mendrop {
+  display: none;
+  position: relative;
+  top: 1.8rem;
+  left: 0rem;
+  animation-name: drop;
+  animation-duration: 0.4s;
+}
+.womendrop {
+  display: none;
+  position: relative;
+  top: 1.8rem;
+  left: -5.6rem;
+  animation-name: drop;
+  animation-duration: 0.4s;
+}
+.kidsdrop {
+  display: none;
+  position: relative;
+  top: 1.8rem;
+  left: -12.62rem;
+  animation-name: drop;
+  animation-duration: 0.4s;
+}
+.equdrop {
+  display: none;
+  position: relative;
+  top: 1.8rem;
+  left: -18.05rem;
+  animation-name: drop;
+  animation-duration: 0.4s;
+}
+.accdrop {
+  display: none;
+  position: relative;
+  top: 1.8rem;
+  left: -26.94rem;
+  animation-name: drop;
+  animation-duration: 0.4s;
+}
+@keyframes drop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.kids:hover .kidsdrop {
+  display: block;
+  transition: 2s;
+}
+.equ:hover .equdrop {
+  display: block;
+  transition: 2s;
+}
+.acc:hover .accdrop {
+  display: block;
+  transition: 2s;
+}
+.men:hover .mendrop {
+  display: block;
+  transition: 2s;
+}
+.women:hover .womendrop {
+  display: block;
+  transition: 2s;
+}
+@media (max-width: 360px) {
+  .chatobot {
+    display: none;
+  }
+  .nav__items li {
+    display: none;
+  }
+}
