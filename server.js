@@ -8,8 +8,6 @@ import { fileURLToPath } from 'url'
 
 // DataBases //
 import productRoutes from './routes/productRoutes.js'
-// const __filename = fileURLToPath(import.meta.url)
-// const __dirname = path.dirname(__filename)
 
 dotenv.config()
 
@@ -17,25 +15,21 @@ connectDB()
 
 const app = express()
 
-app.use(logger('dev'))
-app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
-app.use(cors())
-
 app.use('/api/', productRoutes)
 
-app.use(express.static(path.join(__dirname, './client/build')))
+const __dirname = path.resolve()
 
-app.get('*', function (_, res) {
-  res.sendFile(
-    path.join(__dirname, './client/build/index.html'),
-    function (err) {
-      if (err) {
-        res.status(500).send(err)
-      }
-    }
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '/client/build')))
+
+  app.get('*', (req, res) =>
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
   )
-})
+} else {
+  app.get('/', (req, res) => {
+    res.send('Hello World')
+  })
+}
 
 const PORT = process.env.PORT || 5000
 
