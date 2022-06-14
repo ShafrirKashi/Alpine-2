@@ -1,6 +1,7 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import path from 'path'
+import colors from 'colors'
 import cors from 'cors'
 import logger from 'morgan'
 import connectDB from './config/db.js'
