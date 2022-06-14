@@ -14,13 +14,13 @@ router.get(
     res.json(products)
   })
 )
-router.get(
-  '/products/:id',
-  AsyncHandler(async (req, res) => {
-    const products = await Product.findById(req.params.id)
-    res.json(products)
-  })
-)
+// router.get(
+//   '/products/:id',
+//   AsyncHandler(async (req, res) => {
+//     const products = await Product.findById(req.params.id)
+//     res.json(products)
+//   })
+// )
 
 router.get(
   '/apex/',
@@ -30,12 +30,12 @@ router.get(
   })
 )
 
-router.get(
-  '/apex/:id',
-  AsyncHandler(async (req, res) => {
-    const apex = await Apex.findById(req.params.id)
-    res.json(apex)
-  })
-)
+// router.get(
+//   '/apex/:id',
+//   AsyncHandler(async (req, res) => {
+//     const apex = await Apex.findById(req.params.id)
+//     res.json(apex)
+//   })
+// )
 
 export default router
