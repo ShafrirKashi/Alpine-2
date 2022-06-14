@@ -20,17 +20,14 @@ app.use('/api/', productRoutes)
 
 const __dirname = path.resolve()
 
-if (
-  req.headers['x-forwarded-proto'] !== 'https' &&
-  process.env.NODE_ENV === 'production'
-) {
+if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '/client/build')))
 
   app.get('*', (req, res) =>
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
   )
 } else {
-  app.get('/', (req, res) => {
+  app.get('/', (_, res) => {
     res.send('Hello World')
   })
 }
