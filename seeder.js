@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 import colors from 'colors'
 import users from './data/users.js'
 import products from './data/products.js'
-import ApexLatest from './data/ApexLatest.js'
+import ApexProducts from './data/ApexLatest.js'
 import User from './models/userModel.js'
 import Product from './models/productModel.js'
 import Apex from './models/apexModel.js'
@@ -29,8 +29,8 @@ const importData = async () => {
 
     await Product.insertMany(sampleProducts)
 
-    const sampleApex = ApexLatest.map((ApexLates) => {
-      return { ...ApexLates, user: adminUser }
+    const sampleApex = ApexProducts.map((ApexProduct) => {
+      return { ...ApexProduct, user: adminUser }
     })
 
     await Apex.insertMany(sampleApex)
@@ -38,7 +38,6 @@ const importData = async () => {
     console.log('Data Imported!'.green.inverse)
     process.exit()
   } catch (err) {
-    console.error(`${err}`.red.inverse)
     process.exit(1)
   }
 }
