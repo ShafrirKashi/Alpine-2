@@ -6,7 +6,7 @@ const Container1 = (props) => {
     <div>
       <div className='container1image'>
         <div className='textdiv1'>
-          <h1 className='h1_1'>Winter is Coming</h1>
+          <h1 className='h1_1'>Winters is Coming</h1>
           <h2 className='h2_1'>
             Built for unforgiving conditions. Trusted by professionals across
             the globe.
